@@ -1,5 +1,27 @@
+h1 {
+  color: black;
+  width: 60%;
+  margin: 5% auto;
+}
 body {
-  height: 100%;
-  width: 100%;
-  background: firebrick;
+  background: white;
+}
+
+main {
+  width: 60%;
+  margin: 5% auto;
+  background: rgb(117, 170, 218);
+}
+
+article {
+  margin: 1% auto;
+  border: 2px solid black;
+  background: white;
+  width: 60%;
+}
+article:hover > h3 {
+  color: white;
+}
+article:hover {
+  background: rgb(83, 100, 134);
 }
