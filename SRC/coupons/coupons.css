@@ -1,0 +1,78 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+header {
+  border: 1px solid blue;
+  flex: 1;
+}
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.letters{
+    border: 1px solid black;
+    flex: 2;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.twenty {
+  border: 1px solid salmon;
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+
+.red-box {
+    background-color: rgb(240, 54, 70)
+}
+.blue-box {
+    background-color: rgb(0, 132, 255);
+    display: auto;
+
+}
+main {
+    border: 1px solid silver;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas:
+          "border1 border2 border3"
+          "border4 border5 border6";
+      }
+}
+main .border1 {
+    border: 1px solid black; 
+}
+main .border2 {
+    border: 1px solid black; 
+}
+main .border3 {
+    border: 1px solid black; 
+}
+main .border4 {
+    border: 1px solid black; 
+}
+main .border5 {
+    border: 1px solid black; 
+}
+}
+aside {
+  border: 1px solid black;
+}
+footer {
+  border: 1px solid green;
+}
+.main-container {
+  height: 800px;
+  width: 1300px;
+  display: grid;
+  border: 2px dotted rgb(255, 0, 0);
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: "header twenty", "main aside", "footer footer";
+}
