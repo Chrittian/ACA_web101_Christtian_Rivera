@@ -2,77 +2,166 @@ body {
   width: 100%;
   height: 100%;
 }
+.main-container {
+  height: 800px;
+  width: 100%;
+  display: grid;
+  border: 2px dotted rgb(255, 0, 0);
+  grid-template-rows: 200px 400px 200px;
+  grid-template-columns: 70% 30%;
+  /* grid-template-areas: "header twenty", "main aside", "footer footer"; */
+}
 header {
   border: 1px solid blue;
   flex: 1;
 }
-h1 {
-    font-size: 80px;
-    text-align: center;
+.tech {
+  font-size: 59px;
+  font-weight: bolder;
+  text-align: center;
 }
-
-.letters{
-    border: 1px solid black;
-    flex: 2;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+.offer {
+  font-weight: bolder;
+}
+.letters {
+  border: 1px solid black;
+  flex: 2;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: ;
 }
 
 .twenty {
   border: 1px solid salmon;
   display: grid;
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 60% 40%;
 }
 
 .red-box {
-    background-color: rgb(240, 54, 70)
+  background-color: rgb(240, 54, 70);
+}
+.red {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
 }
 .blue-box {
-    background-color: rgb(0, 132, 255);
-    display: auto;
-
+  background-color: rgb(0, 132, 255);
 }
-main {
-    border: 1px solid silver;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-areas:
-          "border1 border2 border3"
-          "border4 border5 border6";
-      }
+.blue {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+}
+main .main-top {
+  border: 1px solid silver;
+  display: grid;
+  height: 50%;
+  width: 100%;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-areas: "border1 border2 border3";
+}
+main .main-bottom {
+  border: 1px solid silver;
+  display: grid;
+  height: 50%;
+  width: 100%;
+  padding: 0 4px;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-areas: "border4 border5 border6 border7";
 }
 main .border1 {
-    border: 1px solid black; 
+  border: 1px solid black;
+  background-image: url(fruit.png);
 }
+
 main .border2 {
-    border: 1px solid black; 
+  border: 1px solid black;
+  background-color: rgb(0, 162, 255);
+  padding: 10px;
+  text-align: left;
+}
+.from {
+  color: white;
+  font-size: 25px;
+}
+.dont {
+  color: white;
 }
 main .border3 {
-    border: 1px solid black; 
+  border: 1px solid black;
+  background-image: url(chips.png);
 }
 main .border4 {
-    border: 1px solid black; 
+  border: 1px solid black;
+  background-image: url(tea.png);
 }
 main .border5 {
-    border: 1px solid black; 
-}
-}
-aside {
   border: 1px solid black;
+  background-image: url(nuts.png);
+}
+main .border6 {
+  border: 1px solid black;
+  background-image: url(chobani.png);
+}
+main .border7 {
+  border: 1px solid black;
+  background-image: url(chocs.png);
+}
+
+aside {
+  display: grid;
+  border: 1px dotted purple;
+  margin: 4px;
+}
+.aside1 {
+  border: 1px dotted black;
+  background-image: url(wine.png);
+}
+.aside2 {
+  border: 1px dotted black;
+  background-image: url(bjs.png);
+}
+.aside3 {
+  border: 1px dotted black;
+  background-image: url(ramen.png);
 }
 footer {
-  border: 1px solid green;
+  border: 10px solid rgb(0, 162, 255);
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 3/4;
 }
-.main-container {
-  height: 800px;
-  width: 1300px;
+.container-bottom {
+  border: 1px solid silver;
   display: grid;
-  border: 2px dotted rgb(255, 0, 0);
-  grid-template-rows: 20% 60% 20%;
-  grid-template-columns: 70% 30%;
-  grid-template-areas: "header twenty", "main aside", "footer footer";
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-areas: "column1 column2 column3 column4";
+}
+.column1 {
+  border: 1px solid black;
+  background-color: rgb(0, 162, 255);
+  padding: 10px;
+}
+.caffeine {
+  color: aliceblue;
+  font-size: 25px;
+}
+.remember {
+  color: white;
+}
+.column2 {
+  border: 1px solid black;
+  background-image: url(coffee.png);
+}
+.column3 {
+  border: 1px solid black;
+  background-image: url(coke.png);
+}
+.column4 {
+  border: 1px solid black;
+  background-image: url(monster.png);
 }
