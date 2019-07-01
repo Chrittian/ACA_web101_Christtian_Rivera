@@ -1,0 +1,38 @@
+img {
+  width: 850px;
+  height: 450px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 850px;
+  height: 324px;
+  background-color: rgb(228, 228, 228);
+}
+h2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+ul {
+  color: black;
+  list-style: none;
+  float: left;
+}
+li {
+  font-size: 20px;
+  text-align: left;
+}
+input[type] {
+  font-size: px;
+  background: white;
+  border: px;
+}
+input .message {
+  font-size: 30px;
+  background: white;
+  border: 4px;
+}
