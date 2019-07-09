@@ -1,0 +1,54 @@
+body{
+    padding: 20px;
+}
+img {
+    width: 70%;
+    height: 400px;
+}
+aside {
+    float: right; 
+    width: 30%; 
+    font-weight: bolder;  
+}
+aside ul li{
+    margin: 15px;
+}
+button {
+    background: gray;
+    color: white
+}
+p {
+    width: 70%;
+}
+nav {
+    display: none;
+    background-color: gray;
+}
+@media (max-width:768px){
+    aside{
+        display: none;}
+    img{
+        width: 100%;
+        height: auto;}
+    main{
+        width: 140%;}   
+}
+@media (max-width:576px){
+    nav {
+        display: inline;
+        width: 100%;}
+    main {
+        width: 100%;}
+    p { 
+        width: auto;
+        }
+    ul{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 10px;
+}
+    nav{
+        background: rgb(136, 14, 14);
+        
+}
